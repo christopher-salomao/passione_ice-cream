@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/script.js"></script>
+    <title>Passione Ice-Cream</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo">Passione Ice-Cream</a>
+        <button class="hamburger"></button>
+        <ul class="nav-list">
+          <li><a href="#hero" onclick="closeMenu()" class="actually-section js-link">Início</a></li>
+          <li><a href="#ice-cream" onclick="closeMenu()" class="js-link">Sabores</a></li>
+          <li><a href="#contacts" onclick="closeMenu()" class="js-link">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="container">
+        <div class="cta">
+          <div class="mocup"></div>
+          <h1>O sabor das boas memórias</h1>
+          <h2>Inspirado em um sonho de mãe, <br> criado com afeto e ingredientes de verdade</h2>
+          <img src="images/hero-bg-image.svg" alt="Passione Ice-Cream">
+          <a href="#ice-cream" class="btn js-link">Conheça nossos sabores</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
