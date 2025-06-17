@@ -73,16 +73,17 @@ main {
   width: 100%;
   max-width: 1200px;
   padding-inline: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero {
   min-height: calc(100vh - 90px - 20px);
   background-color: #d6efff;
   border-radius: 50px 10px 50px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   gap: 32px;
 }
 
@@ -148,6 +149,115 @@ main {
   mix-blend-mode: multiply;
   user-select: none;
   pointer-events: none;
+}
+
+
+#ice-cream {
+  margin-block: 32px;
+  padding: 20px 10px;
+  gap: 16px;
+  background-color: #fff6e5;
+  border-radius: 10px 50px 10px 50px;
+}
+
+#ice-cream h2 {
+  background-image: linear-gradient(to left, #f7c6cb, #aad9f7);
+  background-clip: text;
+  color: transparent;
+  font-size: 2.05rem;
+  text-align: center;
+  margin-block: 16px;
+}
+
+#ice-cream p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#ice-cream h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-block: 16px;
+}
+
+.sabores {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.titulo-sabores {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.lista-sabores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.sabor-card {
+  width: 250px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s;
+  background: #f9f9f9;
+
+}
+
+.sabor-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Cores por sabor */
+.morango {
+  background: #ffe4ec;
+}
+
+.chocolate {
+  background: #e0c7b3;
+}
+
+.baunilha {
+  background: #fff7dc;
+}
+
+.doce-leite {
+  background: #fbe3c1;
+}
+
+.pistache {
+  background: #e0f2e9;
+}
+
+.coco {
+  background: #ffffff;
+  outline: 3px solid #754321;
+}
+
+.abacaxi {
+  background: #fcedbc;
+}
+
+.cocolate-menta {
+  background: #e0f2e9;
+  outline: 3px solid #754321;
+}
+
+.sabor-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #5c5c5c;
+}
+
+.sabor-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 768px) {
